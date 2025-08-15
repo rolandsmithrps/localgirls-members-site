@@ -18,7 +18,7 @@ const nextConfig = {
     return [{ source: "/(.*)", headers: [
       { key: "Content-Security-Policy", value: csp },
       { key: "X-Frame-Options", value: "SAMEORIGIN" },
-      { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+      { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" }
     ] }];
   },
   async redirects(){ return [{ source:"/", destination:"/login", permanent:false }] }
