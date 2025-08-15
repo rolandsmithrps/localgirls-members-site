@@ -1,0 +1,25 @@
+
+:root{--lg-purple:#7c3aed;--lg-deep:#6d28d9;--lg-text:#e5e7eb}
+html,body{height:100%} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#18181b;color:var(--lg-text)}
+.header{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:var(--lg-purple)}
+.brand{font-weight:700;letter-spacing:.06em}
+.scaffold{display:grid;grid-template-columns:260px 1fr}
+.sidebar{background:#0f0f10;border-right:1px solid #2f2f33;min-height:calc(100vh - 56px)}
+.sidebar h3{padding:16px;margin:0;color:#a78bfa;font-weight:600}
+.menu{list-style:none;padding:0;margin:0}
+.menu li{padding:10px 16px;border-left:3px solid transparent}
+.menu li.active{background:#1a1a1c;border-left-color:#a78bfa}
+.content{padding:16px 20px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.tile{position:relative;border-radius:12px;overflow:hidden;background:#222;border:1px solid #383843;min-height:180px}
+.tile img{width:100%;height:180px;object-fit:cover;display:block}
+.badge{position:absolute;left:10px;bottom:10px;font-size:12px;background:rgba(0,0,0,.55);padding:4px 8px;border-radius:999px;display:flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:#141416;border-bottom:1px solid #2f2f33}
+.chat-list{flex:1;overflow:auto;padding:12px}
+.chat-item{margin-bottom:10px;font-size:14px}
+.chat-item .me{color:#a7f3d0}
+.chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid #2f2f33}
+.chat-form input{flex:1;background:#1a1a1c;border:1px solid #2f2f33;border-radius:8px;padding:10px;color:#e5e7eb}
+.chat-form button{background:var(--lg-deep);border:0;color:white;padding:10px 12px;border-radius:8px}
+.close-btn{background:#27272a;border:1px solid #3f3f46;color:#e5e7eb;padding:6px 10px;border-radius:8px}
